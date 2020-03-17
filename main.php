@@ -351,7 +351,7 @@ function contacts(){
     for($i = 0; $i < sizeof($tab); $i+=3){
         echo "<tr><td>".$tab[$i]."</td><td>".$tab[$i+1]."</td><td>".$tab[$i+2]."</td></tr>";
     }
-    echo "</table>Fin";
+    echo "</table>";
 }
 
 contacts();
