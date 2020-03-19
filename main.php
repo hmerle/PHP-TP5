@@ -345,10 +345,10 @@ function contacts(){
             $str .=$ligne;
         }
     }
-    echo $str;
-    $tab = split(";", $str);
-    echo "<table border>";
-    for($i = 0; $i < sizeof($tab); $i+=3){
+//    echo $str;
+    $tab = explode(";", $str);
+    echo "<table class=\"border\">";
+    for($i = 0; $i < sizeof($tab); $i+=4){
         echo "<tr><td>".$tab[$i]."</td><td>".$tab[$i+1]."</td><td>".$tab[$i+2]."</td></tr>";
     }
     echo "</table>";
